@@ -1,0 +1,238 @@
+/*
+* import of .scss elements ↓
+*/
+
+@import "elements/burger/_burger";
+//@import "elements/spoilers/_spoilers";
+@import "elements/fullScreen/_fullScreen";
+@import "elements/ibg/_ibg";
+@import "elements/slider/_slider";
+
+/*
+* import of content elemets ↓
+*/
+@import "_form";
+@import "_shop";
+//=====================================================//
+//=====================ARTICLE=========================//
+//=====================================================//
+
+.content__article{
+   padding: 129.5px 0px  129.5px 0px;
+}
+
+.article {
+   background-color: #f7f7f7;
+   width: 100%;
+   text-align: center;
+}
+.article__ico {
+   margin-bottom: 25px;
+}
+.article__title {margin-bottom: 20px;font-size: 18px;line-height: 1.2;}
+
+.title {
+   font-family: Lato;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 0.2em;
+   color: #353738;
+}
+
+.article__text {   
+   font-size: 18px;
+   line-height: 34px;}
+
+.text {   
+   font-family: Lato;
+   font-weight: 400;
+   color: #848789;
+}
+
+@media (max-width:$pc){
+   .content__article{
+      padding: 60px 0px  60px 0px;
+   }
+}
+
+@media (max-width:$mobileSmall){
+   .article__text {
+      font-size: 16px;
+      letter-spacing: normal;
+      line-height: 27px;
+   }
+}
+
+//=====================================================//
+//=====================BRANDS==========================//
+//=====================================================//
+
+.brands {}
+
+.brands__rev{
+   .brands__row{
+      .brands__column{
+         order: 1;
+      }
+
+      .brands__column-b{
+         order: 2;
+      }
+
+      @media (max-width:1100px){
+         .brands__column{
+            order: 2;
+         }
+   
+         .brands__column-b{
+            order: 1;
+         }
+      }
+   }
+}
+
+.brands__row {
+   display: flex;
+}
+
+.brands__column {
+   flex: 0 1 33.3333%;
+}
+
+.brands__column-b {
+   flex: 0 1 66.667%;
+}
+
+.brands__item {
+}
+
+.item {
+   position: relative;
+   display: block;
+   height: 100%;
+
+   &__logo {
+      position: absolute;width: 100%;height: 100%;top: 0;left: 0;
+      z-index: 2;
+      display: flex;
+      justify-content:center;align-items: center;
+      background-color: rgba(100,194,158,0.8);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease 0s;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      
+      span{
+         font-size: 14px;
+         line-height: 1.2;
+         font-weight: 700;
+         text-transform: uppercase;
+         letter-spacing: 0.2em;
+         color: #fff;
+      }
+   }
+   
+   &:hover{
+      .item__logo{
+         opacity: 1;
+         visibility: visible;
+      }
+   }
+}
+
+
+
+
+.item__image {
+   position: absolute;width: 100%;height: 100%;top: 0;left: 0; 
+   
+}
+
+
+.brands__content {
+   position: relative;  
+   display: flex;
+   flex-direction: column;
+   justify-content:center;align-items: center;
+   padding: 70px 68px 54px 68px;
+   background-color: #fff;
+   
+   &::after{
+      content: '';
+      bottom: -10px;
+      position: absolute;
+      left: 50%;
+      margin: 0px 0px 0px -10px;
+      width: 0;
+      height: 0;
+      border-top: 10px solid #fff;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+   }
+
+   @media (max-width:1500px){
+      padding: 40px 35px 30px 35px;     
+   }
+}
+
+.article {
+}
+
+.brands__ico {
+   margin: 0px 0px 15.5px 0px;
+}
+
+
+.brands__title {
+   margin: 15.5px 0px 13px 0px;
+}
+
+.title {
+}
+
+.brands__text {
+   margin: 13px 0px 0px 0px;
+   font-size: 16px;
+   line-height: 30px;
+
+}
+
+.brands__text-j{
+   text-align: justify;
+}
+
+.brands__line {
+   margin-top: 40px;
+
+   @media (max-width:1500px){
+      margin-top: 20px;
+   }
+}
+
+.line {
+   width: 50px;
+   height: 1px;
+   background-color: rgba(53,55,56,0.2);
+}
+
+.brands__image {
+   padding: 0px 0px 37.501% 0px;
+}
+
+@media (max-width:1100px){
+     .brands__row{
+        flex-direction: column;
+     }
+
+     .brands__item{
+        padding: 0px 0px 70% 0px;
+     }
+
+     .brands__column{
+        .none{
+           display: none;
+        }
+     }
+}

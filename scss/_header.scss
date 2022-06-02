@@ -1,0 +1,22 @@
+.header {
+   width: 100%;   
+   position: absolute;
+   left: 0;
+   top: 35px;
+
+   @media (max-width:$tablet){
+      top: 20px;
+   }
+}
+.header__row {
+   display: flex;
+   justify-content:center;align-items: center;
+   height: 85px;
+}
+
+.header__logo{
+   position: absolute;
+   top: 0;
+   z-index: 50;
+
+}

@@ -1,0 +1,107 @@
+.slider {
+
+
+   /* Arrow */
+   .slick-arrow{}
+   /* Left arrow */
+   .slick-arrow.slick-prev{}
+   /* Right arrow */
+   .slick-arrow.slick-next{}
+
+   /* Arrow not active */
+   .slick-arrow.slick-disabled{}
+
+   /* Points (bulites) */
+   .slick-dots{
+      display: flex;
+      justify-content:center;align-items: center;
+      margin: 0px 0px 50px 0px;
+   }
+   .slick-dots li{}
+
+   /* Active point */
+   .slick-dots li.slick-active button{
+      background-color: #a9afb3;
+   }
+
+   /* Point element */
+   .slick-dots li button{
+      font-size: 0;
+      height: 10px;
+      width: 10px;      
+      background-color: transparent;
+      border: 1px solid #a9afb3;
+      border-radius: 50%;
+      margin: 0 5px;
+   }
+}
+
+
+.slider__item {
+   width: 100%;
+   text-align: center;
+   padding: 150px 0px 100px 0px;
+
+}
+.slider__twiter {
+   margin-bottom: 37px;
+}
+.slider__title {
+   font-size: 18px;
+   line-height: 1.2;
+   font-weight: 700;
+   letter-spacing: 0.1em;
+   margin: 0px 0px 27px 0px;
+   span{
+      color: grey;   
+   }
+}
+.slider__text {
+   font-size: 24px;
+   line-height: 34px;
+   font-weight: 400;
+   font-style: italic;
+   color: #848789;
+}
+
+@media (max-width:$tablet){
+   .slider__item{
+      padding: 100px 0px 50px 0px;
+   }
+}
+
+
+
+/* Slider */
+.slick-slider{}
+
+/* Slider started */
+.slick-slider.slick-initialized{}
+
+/* Slider with dots */
+.slick-slider.slick-dotted{}
+
+/* Bounding wrapper */
+.slick-list {overflow: hidden;}
+
+/* Slide feed */
+.slick-track{
+   display: flex;
+   align-items: flex-start;
+}
+
+/* Slide */
+.slick-slide{}
+
+/* Slide active (shown) */
+.slick-slide.slick-active{}
+
+/* Main slide */
+.slick-slide.slick-current{}
+
+/* Slide center */
+.slick-slide.slick-center{}
+
+/* Cloned slide */
+.slick-slide.slick-cloned{}
+
